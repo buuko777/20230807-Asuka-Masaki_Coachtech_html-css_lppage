@@ -1,19 +1,22 @@
+* {
+    outline: 1px solid red !important;
+}
+
 .header{
-width: 100vw;
+width: 1000px;
 display:flex;
 justify-content:space-between;
 align-items: center;
+padding-top: 20px;
+padding-bottom:20px;
 }
 
-h1 img{
-width:10vw;
-margin:10px 20px; 
-vertical-align:bottom;
+.page-title img{
+width:100px;
 }
-
 
 .header__nav{
-width:40vw;
+width:400px;
 display:flex;
 display: inline-block;
 margin-right: 20px;
@@ -26,38 +29,42 @@ justify-content: space-between;
 }
 
 .header_nav-item {
+font:14px;
 list-style: none;
 text-decoration-line:none;
 }
 
 .link1{
 text-decoration: none;
-color:darkgray;    
+color:darkgray;
 }
 
 .top{
-width:100vw;
+width:1000px;
 display:flex;
-justify-content: space-between;
+justify-content:space-between;
+margin-bottom:100px;
 }
 
 .top__text-box{
+width:400px;
 position:relative;
 top: 100px;
-left: 25%;
+left: 15%;
 }
 
 .deco-text{
-font-size: 60px;
+font-size: 50px;
 color:#b41567;
 font-family: 'Indie Flower', cursive;
 line-height: 150%;
 }
 
 .red-text{
-font-size: 36px;
+margin-top:30px;
+font-size: 18px;
 color: #b41567;
-font:bolder;
+font-weight:bolder;
 line-height: 150%;
 }
 
@@ -65,6 +72,7 @@ line-height: 150%;
 font-size:14px;
 color:darkgray;
 line-height: 150%;
+margin-top:10px;
 }
 
 .green-text{
@@ -73,17 +81,17 @@ font:bolder;
 }
 
 .top__pic{
-width:60%;
+width:625px;
 float:right;
-margin-right: 0%;
+padding-right: 0%;
 }
 
-.top-pic img{
-width:100%    
+.top__pic img{
+width:625px;
 }
 
 .news{
-width:100vw;
+width:1000px;
 }
 
 .news__title{
@@ -104,18 +112,21 @@ font-size:24px;
 color: darkgray;
 }
 
-.news__table{
+.news__list{
 line-height:10px;
-display:flex;
-justify-content: space-between;
-width:50vw;
-margin:30px auto;
 color:darkgray;
 font-size: 16px;
 border-top:solid 1px darkgray;
 border-bottom:solid 1px darkgray;
 border-collapse: collapse;
 border-spacing: 10px 20px;
+padding-left:0;
+}
+
+.list-row{
+list-style:none;
+width:700px;
+margin-left:25%;
 }
 
 .table-date{
@@ -126,6 +137,7 @@ text-align: center;
 line-height: 200%;
 padding:10px;
 border-bottom:1px solid #ccc;
+text-decoration: none;
 }
 
 .table-date2 {
@@ -151,7 +163,7 @@ display:inline;
 }
 
 .table-message {
-width:500px;
+width:400px;
 color: darkgray;
 display:inline-block;
 text-align:left;
@@ -162,19 +174,19 @@ padding: 10px;
 
 
 .about{
-width:100vw;
+width:1000px;
 background-color: #f5f5f5;
-padding:50px 50px;
-
+padding-top:50px;
+padding-bottom:50px;
 }
 
 .about__title{
-margin:50px auto;
 text-align: center;
+margin-bottom:50px;
 }
 
 .about__content{
-width:50vw;
+width:800px;
 margin:20px auto;
 display:flex;
 justify-content: space-between;
@@ -186,7 +198,7 @@ width:300px;
 
 .text{
 color: darkgray;
-text-align: left;ƒ
+text-align: left;
 }
 
 .content-pic{
@@ -199,19 +211,18 @@ width:300px;
 }
 
 .service{
-width:100vw;
-padding:50px 50px;
+width:1000px;
 }
 
 .service__title{
 margin-top:50px;
-margin-left:20%;
+margin-left:10%;
 }
 
 
 .service__content{
 display:flex;
-width:60%;
+width:80%;
 margin: 20px auto;
 color:white;
 }
@@ -241,7 +252,7 @@ font-weight: bold;
 }
 
 .service__content-large-text{
-margin:20px 20px;
+margin:5px 5px;
 line-height:200%;
 }
 
@@ -251,7 +262,7 @@ background-color: #B35B8B;
 }
 
 .service__content-right-top-text{
-margin: 20px 20px;
+margin: 5px 5px;
 font: size 12px;
 text-align: left;
 line-height: 200%;
@@ -283,18 +294,20 @@ width:100px;
 }
 
 .blog{
-width:100vw;
+margin-top:100px;
+width:1000px;
 background-color: rgba(245, 245, 245, 1);
-padding:50px;
+padding-top:50px;
+padding-bottom: 10px;
 }
 
 .blog__title{
-margin-left:20%;
+margin-left:10%;
 }
 
 .blog__card-container{
 display:flex;
-width:60%;
+width:80%;
 margin: 20px auto;
 justify-content: space-between;
 }
@@ -307,7 +320,7 @@ background-color: white;
 }
 
 .card-top{
-width:100%;
+width:1000px;
 height:50%;
 display:flex;
 position:relative;
@@ -360,7 +373,7 @@ font: 10px;
 
 .text2{
 color:darkgray;
-font-weight:bold;    
+font-weight:bold;
 }
 
 .blog__button{
@@ -382,8 +395,9 @@ text-decoration: none;
 }
 
 .company{
-width:100vw;
-padding: 50px;
+width:1000px;
+margin-top:50px;
+margin-bottom:50px;
 }
 
 .company__title{
@@ -391,13 +405,13 @@ margin-left: 25%;
 }
 
 .company__table{
-width:40vw;
+width:500px;
 margin:50px auto;
 border: solid 1px #EEEEEE;
 }
 
 .company__table-row{
-width:40vw;
+width:400px;
 border: solid 1px #EEEEEE;
 line-height: 250%;
 }
@@ -412,26 +426,26 @@ margin-left:5px;
 }
 
 .company__recruit{
-width:100vw;
+width:1000px;
 display:flex;
-padding:50px 0px;    
+padding:50px 0px;
 }
 
 .info{
 width:50%;
 height:400px;
-background-image:url(img/recruit.png);
+background-image:url(../img/recruit.png);
 background-size: cover;
 background-repeat:no-repeat;
 display:flex;
 justify-content:center;
-align-items:center;    
+align-items:center;
 }
 
 .interview{
 width:50%;
 height: 400px;
-background-image:url(img/interview.png);
+background-image:url(../img/interview.png);
 background-size:cover;
 background-repeat: no-repeat;
 display: flex;
@@ -442,19 +456,22 @@ align-items: center;
 .text3{
 font-size:20px;
 color:white;
-font-weight: bold;    
+font-weight: bold;
 }
 
 .company__recruit-content{
-width:100pw;
-padding: 50px;px;
+width:1000px;
 display:flex;
 justify-content: center;
 align-items: center;
 }
 
+.inquiry{
+width:1000px;
+}
+
 .inquiry__button{
-margin:0px auto 50px auto;
+margin: 50px auto 50px auto;
 width:200px;
 height:50px;
 border-radius:20px;
@@ -462,7 +479,7 @@ background:linear-gradient(90deg,#FC1E8D,#b9176a);
 color:white;
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
 box-shadow: 0px 10px 3px #840151;
 }
 
@@ -472,7 +489,7 @@ font-size:20px;
 display: inline-block;
 font-weight:bold;
 position:relative;
-line-hight:300%;
+line-height:300%;
 }
 
 .text4::after{
@@ -489,25 +506,28 @@ background-color:#840151;
 
 .inquiry__button-text{
 display:inline-block;
+text-align:left;
 }
 
-.inquiry__button-text::before{
+.inquiry__button::before{
 content:"";
-background:url(img/mailicon.svg);
+background:url(../img/mailicon.svg);
 background-size: cover;
 vertical-align: middle;
 width:20px;
 height:20px;
 display:inline-block;
-margin-right:10px;
+margin: 10px;
 }
 
 footer{
+width:1000px;
 background-color: rgba(245, 245, 245, 1);
 display:flex;
 align-items:center;
-justify-content:center;    
+justify-content:center;
 }
+
 .footer-text{
-line-height: 300%;    
+line-height: 300%;
 }
